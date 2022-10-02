@@ -47,7 +47,7 @@
 <h3 align="left">Support:</h3>
 
 <p>
-  <a href="https://www.buymeacoffee.com/https://www.buymeacoffee.com/abhijat789C"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/abhijat789C" /></a>
-<a href="https://ko-fi.com/https://ko-fi.com/abhijat"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="https://ko-fi.com/abhijat" /></a>
+  <a href="https://www.buymeacoffee.com/abhijat789C"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/abhijat789C" /></a>
+<a href="https://ko-fi.com/abhijat"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="https://ko-fi.com/abhijat" /></a>
 </p>
 <p align="center" space="10px"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=abhijat-abhijat" alt="abhijat-abhijat" /></a> </p>
