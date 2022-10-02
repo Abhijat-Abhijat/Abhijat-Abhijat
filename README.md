@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://drive.google.com/file/d/1rr3-m56GV9APkeiHrbeUm3p40s5esH8C/view?usp=sharing" alt="Profile-Pic" /> </p>
+<p align="center" style="border-radius:50%"> <img style="width:100px;border-radius:50%" src="./mypic.jpeg" alt="Profile-Pic" /> </p>
 <h1 align="center">Hi 👋, I'm Abhijat</h1>
 <h3 align="center">A passionate developer from India</h3>
 
