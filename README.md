@@ -4,11 +4,11 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=abhijat-abhijat&label=Profile%20views&color=0e75b6&style=flat" alt="abhijat-abhijat" /> </p>
 
-- 👨‍💻 All of my projects are available at [Portfolio](https://abhijat-abhijat.github.io/Portfolio/)
+<!-- - 👨‍💻 All of my projects are available at [Portfolio](https://abhijat-abhijat.github.io/Portfolio/) -->
 
 - 📫 How to reach me **abhijat789@gmail.com**
 
-- 📄 Know about my experiences [Resume](https://drive.google.com/file/d/1x89GUD99_kCRmZrHurQBCOxIDSCu1LkZ/view?usp=sharing)
+<!-- - 📄 Know about my experiences [Resume](https://drive.google.com/file/d/1x89GUD99_kCRmZrHurQBCOxIDSCu1LkZ/view?usp=sharing) -->
 <p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=abhijat-abhijat&show_icons=true&locale=en" alt="abhijat-abhijat" /></p>
 <p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abhijat-abhijat&" alt="abhijat-abhijat" /></p>
 <h3 align="left">Connect with me:</h3>
