@@ -50,4 +50,4 @@
   <a href="https://www.buymeacoffee.com/abhijat789C"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/abhijat789C" /></a>
 <a href="https://ko-fi.com/abhijat"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="https://ko-fi.com/abhijat" /></a>
 </p>
-<p align="center"><img src="https://github-profile-trophy.vercel.app/?username=abhijat-abhijat&column=4" alt="abhijat-abhijat" /></p>
+<p align="center"><img src="https://github-profile-trophy.vercel.app/?username=abhijat-abhijat&column=4&row=2" alt="abhijat-abhijat" /></p>
