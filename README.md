@@ -10,7 +10,8 @@
 
 <!-- - 📄 Know about my experiences [Resume](https://drive.google.com/file/d/1x89GUD99_kCRmZrHurQBCOxIDSCu1LkZ/view?usp=sharing) -->
 <p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=abhijat-abhijat&show_icons=true&locale=en" alt="abhijat-abhijat" /><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abhijat-abhijat&" alt="abhijat-abhijat" /></p>
-<p align="center"><img src="https://github-profile-trophy.vercel.app/?username=abhijat-abhijat&column=4&row=2" alt="abhijat-abhijat" /><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=abhijat-abhijat&show_icons=true&locale=en&layout=compact" alt="abhijat-abhijat" /></p>
+<p align="center"><img src="https://github-profile-trophy.vercel.app/?username=abhijat-abhijat&column=4&row=2" alt="abhijat-abhijat" /></p>
+<p align='center'><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=abhijat-abhijat&show_icons=true&locale=en&layout=compact" alt="abhijat-abhijat" /></p>
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://codepen.io/abhijat-abhijat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="abhijat-abhijat" height="30" width="40" /></a>
