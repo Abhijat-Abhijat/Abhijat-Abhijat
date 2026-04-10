@@ -8,8 +8,8 @@
 <p align="center">
   <a href="mailto:abhijat.tech@gmail.com">📫 abhijat.tech@gmail.com</a> &nbsp;|&nbsp;
   <a href="https://github.com/Abhijat-Abhijat">GitHub</a> &nbsp;|&nbsp;
-  <a href="https://www.linkedin.com/in/abhijat">LinkedIn</a> &nbsp;|&nbsp;
-  <a href="https://abhijat.tech">Portfolio</a>
+  <a href="https://www.linkedin.com/in/abhijat-profile/">LinkedIn</a> &nbsp;|&nbsp;
+  <a href="https://abhijat.tech.gitlab.io/portfolio/">Portfolio</a>
 </p>
 
 ---
@@ -90,8 +90,10 @@ Built with **Bash · Linux From Scratch · Wine · Bottles** — 30% faster boot
 ## 📊 GitHub stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Abhijat-Abhijat&show_icons=true&theme=default&hide_border=true&count_private=true" alt="Abhijat's GitHub stats" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhijat-Abhijat&layout=compact&hide_border=true&theme=default" alt="Top languages" height="160"/>
+  <p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abhijat-abhijat&" alt="abhijat-abhijat" /></p>
+  <p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=abhijat-abhijat&show_icons=true&locale=en" alt="abhijat-abhijat" /></p>
+  <p align="center"><img src="https://github-profile-trophy.vercel.app/?username=abhijat-abhijat&column=3&margin-w=15&margin-h=15" alt="abhijat-abhijat" /></p>
+  <p align='center'><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=abhijat-abhijat&show_icons=true&locale=en&layout=compact" alt="abhijat-abhijat" /></p>
 </p>
 
 ---
