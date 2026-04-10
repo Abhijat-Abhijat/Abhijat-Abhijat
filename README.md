@@ -1,58 +1,102 @@
-<!-- <p align="center" style="border-radius:50%"> <img style="width:100px;border:1px solid black;  " src="./mypic.jpeg" alt="Profile-Pic" /> </p> -->
-<h1 align="center" style="font-family:mono";>Hi 👋, I'm Abhijat</h1>
-<h3 align="center">A passionate developer from India</h3>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=abhijat-abhijat&label=Profile%20views&color=0e75b6&style=flat" alt="abhijat-abhijat" /> </p>
-
-<!-- - 👨‍💻 All of my projects are available at [Portfolio](https://abhijat-abhijat.github.io/Portfolio/) -->
-
-- 📫 How to reach me **abhijat789@gmail.com**
-
-<!-- - 📄 Know about my experiences [Resume](https://drive.google.com/file/d/1x89GUD99_kCRmZrHurQBCOxIDSCu1LkZ/view?usp=sharing) -->
-
-<h3 align="left">Connect with me:</h3>
-<p align="center">
-<a href="https://codepen.io/abhijat-abhijat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="abhijat-abhijat" height="30" width="40" /></a>
-&nbsp;&nbsp;
-<a href="https://linkedin.com/in/abhijat ." target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="abhijat ." height="30" width="40" /></a>
-  &nbsp;&nbsp;
-<a href="https://instagram.com/abh7917" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="abh7917" height="30" width="40" /></a>
-  &nbsp;&nbsp;
-<a href="https://www.hackerrank.com/@abhijat_k19" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="@abhijat_k19" height="30" width="40" /></a>
-  &nbsp;&nbsp;
-<a href="https://www.leetcode.com/abhijat789" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="abhijat789" height="30" width="40" /></a>
-  &nbsp;&nbsp;
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="center"> 
-  <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> &nbsp;&nbsp;
-  <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a>&nbsp;&nbsp; 
-</p>
-
-<h3 align="left">Support:</h3>
+<h1 align="center">Hey, I'm Abhijat 👋</h1>
 
 <p align="center">
- <a href="https://www.buymeacoffee.com/abhijat789C"> <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/abhijat789C" /></a>
-<a href="https://ko-fi.com/abhijat"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="https://ko-fi.com/abhijat" /></a>
+  <b>Full-Stack Software Engineer · AI/Agent Systems · Cloud-Native Apps</b><br/>
+  <i>Building intelligent pipelines and scalable systems that actually ship.</i>
 </p>
 
+<p align="center">
+  <a href="mailto:abhijat.tech@gmail.com">📫 abhijat.tech@gmail.com</a> &nbsp;|&nbsp;
+  <a href="https://github.com/Abhijat-Abhijat">GitHub</a> &nbsp;|&nbsp;
+  <a href="https://www.linkedin.com/in/abhijat">LinkedIn</a> &nbsp;|&nbsp;
+  <a href="https://abhijat.tech">Portfolio</a>
+</p>
 
+---
 
+## 🔭 What I'm working on
 
-<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abhijat-abhijat&" alt="abhijat-abhijat" /></p>
-<p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=abhijat-abhijat&show_icons=true&locale=en" alt="abhijat-abhijat" /></p>
-<p align="center"><img src="https://github-profile-trophy.vercel.app/?username=abhijat-abhijat&column=3&margin-w=15&margin-h=15" alt="abhijat-abhijat" /></p>
-<p align='center'><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=abhijat-abhijat&show_icons=true&locale=en&layout=compact" alt="abhijat-abhijat" /></p>
+Designing and orchestrating **multi-agent AI pipelines** at TCS for UBS — building LLM agents for Source of Wealth classification, Splunk observability dashboards, and automated CI/CD infrastructure using Langgraph, FastAPI, and Azure.
+
+---
+
+## ⚡ By the numbers
+
+| | |
+|---|---|
+| 🤖 **15+ AI agents** built & deployed | 🚀 **40% faster** deployments via CI/CD automation |
+| 🏢 **13+ teams** adopted my identification agent | 📉 **15% reduction** in system downtime via Splunk |
+| 🛠 **50+ production issues** resolved | 📈 **22% stability improvement** for 10K+ monthly users |
+
+---
+
+## 🛠 Tech stack
+
+**Backend**
+`Python` `FastAPI` `Node.js` `Express.js` `Langgraph` `Socket.IO` `Splunk` `C++`
+
+**Frontend**
+`React.js` `React Native` `Electron.js` `Streamlit`
+
+**Cloud & DevOps**
+`Azure` `Docker` `GitLab CI/CD` `GitHub Actions`
+
+**Databases**
+`MySQL` `MongoDB` `PostgreSQL`
+
+---
+
+## 🚀 Featured projects
+
+### 🧠 [AI Research Scientist Agent](https://github.com/Abhijat-Abhijat)
+> Multi-agent system for AI research automation
+
+Built with **Python · Langgraph · HTML · GitLab Pages** — 5 coordinated AI agents handling orchestration, prompt engineering, and multi-agent workflow coordination end-to-end.
+
+---
+
+### 🐧 [ASH OS — Custom Linux Operating System](https://github.com/Abhijat-Abhijat)
+> A lightweight, fast Linux distro built from scratch
+
+Built with **Bash · Linux From Scratch · Wine · Bottles** — 30% faster boot time than reference builds, with hardened file access policies for system integrity.
+
+---
+
+## 🏆 Achievements & certifications
+
+- 🥈 **Silver Medal** · B.Tech AY 2022–23, SRM University Delhi NCR (SGPA 9.1)
+- ⭐ **Star of the Month** · Tata Consultancy Services
+- 🎯 **On The Spot Award** · Tata Consultancy Services
+- 🛡 **DIAT Certified** · DRDO, Pune
+
+---
+
+## 💼 Experience
+
+**Assistant Software Engineer** — TCS *(Client: UBS)* · Jun 2024 – Present · Pune
+- Designed 10+ AI agents with orchestration, prompt engineering & multi-agent coordination
+- Built a reusable Python utility library adopted across teams
+- Developed a generic identification agent adopted by 13+ teams
+- Automated GitLab CI/CD pipelines, cutting deployment time by 40%
+- Built Splunk dashboards that reduced downtime by 15%
+
+**Full Stack Developer** — TCI *(Client: HerHeadquarters, Mud Australia)* · Nov 2022 – Nov 2023 · Delhi
+- Enhanced marketplace stability by 22% for 10,000+ monthly users
+- Resolved 50+ production-impacting issues
+- Improved CI/CD pipeline with GitHub Actions, reducing build times by 30%
+
+---
+
+## 📊 GitHub stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Abhijat-Abhijat&show_icons=true&theme=default&hide_border=true&count_private=true" alt="Abhijat's GitHub stats" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhijat-Abhijat&layout=compact&hide_border=true&theme=default" alt="Top languages" height="160"/>
+</p>
+
+---
+
+<p align="center">
+  <i>Open to interesting problems in AI systems, developer tooling, and full-stack engineering.</i><br/>
+  <b>Let's build something great — <a href="mailto:abhijat.tech@gmail.com">reach out!</a></b>
+</p>
