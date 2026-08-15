@@ -90,7 +90,7 @@ Built with **Bash · Linux From Scratch · Wine · Bottles** — 30% faster boot
 ## 📊 GitHub stats
 
 <p align="center">
-  <p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abhijat-abhijat&" alt="abhijat-abhijat" /></p>
+  <p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abhijat-abhijat" alt="abhijat-abhijat" /></p>
 </p>
 
 ---
