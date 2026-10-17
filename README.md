@@ -1,123 +1,160 @@
+<!--
+  Profile README for Abhijat-Abhijat
+  Palette: near-black #0D0F10 · warm white #F2F0E9 · muted grey #A6A49B · terminal green #B6F09C
+  GitHub sanitizes scripts in README files, so the interactive mini-game lives in /game/index.html.
+-->
 
-<p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Abhijat — Full-Stack Software Engineer, AI and Agent Systems">
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://github.com/Abhijat-Abhijat">
-    <img src="https://img.shields.io/badge/GitHub-Profile-292725?style=for-the-badge&logo=github&logoColor=F5F1E8" alt="GitHub Profile">
-  </a>
-</p>
+<img src="assets/hero.svg" alt="Abhijat — AI, software and systems" width="100%" />
 
-<p align="center">
-  <em>Engineering intelligence. Building systems that scale.</em>
-</p>
+### AI Engineer · Full-Stack Developer · Systems Thinker
 
-<img src="assets/about.svg" width="100%" alt="About">
+**I build useful software, intelligent agents, and systems that ship.**
 
-I'm a **Full-Stack Software Engineer focused on AI and agent systems, backend engineering, and cloud-native applications.**
+[Portfolio](https://www.abhijat.co.in/) · [GitHub](https://github.com/Abhijat-Abhijat) · [Play the mini-game](https://abhijat-abhijat.github.io/game/)
 
-My work spans multi-agent LLM workflows, backend services, observability, and CI/CD automation. I currently work at **Tata Consultancy Services on a UBS client engagement**, building AI-driven workflows and engineering tools.
+![Profile views](https://komarev.com/ghpvc/?username=Abhijat-Abhijat&style=flat-square&color=B6F09C&label=PROFILE+VIEWS)
 
-<img src="assets/impact.svg" width="100%" alt="Selected engineering impact">
+</div>
 
-| Engineering focus | Reported outcome |
-|---|---:|
-| AI agents built and deployed | 15+ |
-| Teams adopting an identification agent | 13+ |
-| Faster deployments through CI/CD automation | 40% |
-| Reduction in system downtime | 15% |
-| Production issues resolved | 50+ |
-| Stability improvement for 10K+ monthly users | 22% |
+---
 
-<sub>Reported outcomes from my existing profile README; these are project-specific figures, not independently audited metrics.</sub>
+## `whoami` — a little about me
 
-<img src="assets/work.svg" width="100%" alt="Selected work">
+I'm a software engineer interested in the intersection of **AI agents, backend systems, and product engineering**. I enjoy taking ideas from a rough prototype to something people can actually use—whether that's an agent workflow, a reliable API, or a practical developer tool.
 
-### 01 / AI Research Scientist Agent
+- 🤖 Building with **LLMs, agentic workflows, and automation**
+- ⚙️ Interested in **backend architecture, APIs, and cloud-native delivery**
+- 🧪 Big on experimentation, debugging, and measurable outcomes
+- 🐧 Curious about Linux, developer tooling, and systems under the hood
+- 🌏 Based in India
 
-A multi-agent system for AI research automation, coordinating five agents for orchestration, prompt engineering, and collaborative AI workflows.
+> Current mindset: make it work, make it clear, make it reliable.
 
-`Python` `LangGraph` `HTML` `GitLab Pages`
+## `./impact` — work that moved the needle
 
-[Explore my repositories →](https://github.com/Abhijat-Abhijat)
+These figures reflect outcomes described in my existing profile and work history; they are self-reported, not independently audited.
 
-### 02 / ASH OS
+| Signal | Reported outcome |
+|:--|--:|
+| AI agent workflows | **15+** |
+| Teams adopting an identification agent | **13+** |
+| Faster deployments through CI/CD improvements | **40%** |
+| Reported reduction in downtime | **15%** |
+| Production issues resolved | **50+** |
+| Stability improvement for a 10K+ monthly-user product | **22%** |
 
-A lightweight Linux distribution built from scratch, focused on boot performance and hardened file-access policies.
+## `projects/` — things I've built
 
-`Bash` `Linux From Scratch` `Wine` `Bottles`
+### 🔬 AI Research Scientist Agent
+A multi-agent research automation concept designed to coordinate research tasks and turn findings into a structured output.
 
-[Explore my repositories →](https://github.com/Abhijat-Abhijat)
+`Python` `LangGraph` `Multi-agent systems` `HTML`
 
-<img src="assets/toolkit.svg" width="100%" alt="Technology toolkit">
+[Explore my repositories →](https://github.com/Abhijat-Abhijat?tab=repositories)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-292725?style=flat-square&logo=python&logoColor=F5F1E8" alt="Python">
-  <img src="https://img.shields.io/badge/FastAPI-292725?style=flat-square&logo=fastapi&logoColor=F5F1E8" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Node.js-292725?style=flat-square&logo=nodedotjs&logoColor=F5F1E8" alt="Node.js">
-  <img src="https://img.shields.io/badge/LangGraph-292725?style=flat-square&logo=langchain&logoColor=F5F1E8" alt="LangGraph">
-  <img src="https://img.shields.io/badge/React-292725?style=flat-square&logo=react&logoColor=F5F1E8" alt="React">
-  <img src="https://img.shields.io/badge/React_Native-292725?style=flat-square&logo=react&logoColor=F5F1E8" alt="React Native">
-  <img src="https://img.shields.io/badge/Electron-292725?style=flat-square&logo=electron&logoColor=F5F1E8" alt="Electron">
-  <img src="https://img.shields.io/badge/Azure-292725?style=flat-square&logo=microsoftazure&logoColor=F5F1E8" alt="Azure">
-  <img src="https://img.shields.io/badge/Docker-292725?style=flat-square&logo=docker&logoColor=F5F1E8" alt="Docker">
-  <img src="https://img.shields.io/badge/GitLab_CI%2FCD-292725?style=flat-square&logo=gitlab&logoColor=F5F1E8" alt="GitLab CI/CD">
-  <img src="https://img.shields.io/badge/GitHub_Actions-292725?style=flat-square&logo=githubactions&logoColor=F5F1E8" alt="GitHub Actions">
-  <img src="https://img.shields.io/badge/MySQL-292725?style=flat-square&logo=mysql&logoColor=F5F1E8" alt="MySQL">
-  <img src="https://img.shields.io/badge/MongoDB-292725?style=flat-square&logo=mongodb&logoColor=F5F1E8" alt="MongoDB">
-  <img src="https://img.shields.io/badge/PostgreSQL-292725?style=flat-square&logo=postgresql&logoColor=F5F1E8" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/Splunk-292725?style=flat-square&logo=splunk&logoColor=F5F1E8" alt="Splunk">
-</p>
+### 🐧 ASH OS
+A lightweight Linux distribution experiment focused on learning how the operating system stack fits together, with compatibility tooling in the mix.
 
-<img src="assets/experience.svg" width="100%" alt="Experience and recognition">
+`Linux` `Bash` `Linux From Scratch` `Wine` `Bottles`
 
-### Assistant Software Engineer — Tata Consultancy Services
-*UBS client engagement · Pune · June 2024–Present*
+[Explore my repositories →](https://github.com/Abhijat-Abhijat?tab=repositories)
 
-- Designed multi-agent AI pipelines, including prompt engineering and workflow coordination.
-- Built reusable Python utilities adopted across teams.
-- Developed an identification agent adopted by 13+ teams.
-- Automated CI/CD pipelines, reducing deployment time by 40%.
-- Developed Splunk dashboards associated with a 15% reduction in downtime.
+### 🐍 SNAKE.exe — Neon Arcade
+A proper arcade classic: steer the neon snake, collect glowing data bits, rack up points, and beat your personal best. Keyboard, touch buttons, and swipe controls supported; speed ramps up as your score grows.
 
-### Full Stack Developer — TCI
-*HerHeadquarters and Mud Australia · Delhi · November 2022–November 2023*
+**[▶ PLAY SNAKE.exe](https://abhijat-abhijat.github.io/game/)** · [View game source](game/index.html)
 
-- Improved application stability by 22% for 10,000+ monthly users.
-- Resolved 50+ production-impacting issues.
-- Improved CI/CD workflows, reducing build times by 30%.
+> GitHub README Markdown doesn't execute embedded JavaScript. The game runs as a standalone page when GitHub Pages is enabled for this repository.
 
-### Recognition
+## `toolbox --list`
 
-- Silver Medal — B.Tech academic year 2022–23, SRM University Delhi NCR (SGPA 9.1)
-- Star of the Month — Tata Consultancy Services
-- On The Spot Award — Tata Consultancy Services
-- DIAT Certified — DRDO, Pune
+**Languages & runtime**
 
-<img src="assets/activity.svg" width="100%" alt="GitHub activity and contribution history">
+![Python](https://img.shields.io/badge/Python-0D0F10?style=flat-square&logo=python&logoColor=B6F09C)
+![JavaScript](https://img.shields.io/badge/JavaScript-0D0F10?style=flat-square&logo=javascript&logoColor=B6F09C)
+![Node.js](https://img.shields.io/badge/Node.js-0D0F10?style=flat-square&logo=nodedotjs&logoColor=B6F09C)
+![Bash](https://img.shields.io/badge/Bash-0D0F10?style=flat-square&logo=gnubash&logoColor=B6F09C)
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Abhijat-Abhijat&show_icons=true&hide_border=true&title_color=292725&text_color=625D55&icon_color=9A795B&bg_color=F5F1E8&include_all_commits=true" height="165" alt="GitHub statistics">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhijat-Abhijat&layout=compact&hide_border=true&title_color=292725&text_color=625D55&bg_color=F5F1E8" height="165" alt="Most used languages">
-</p>
+**AI & backend**
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abhijat-Abhijat/Abhijat-Abhijat/output/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abhijat-Abhijat/Abhijat-Abhijat/output/github-snake.svg">
-    <img src="https://raw.githubusercontent.com/Abhijat-Abhijat/Abhijat-Abhijat/output/github-snake.svg" width="100%" alt="GitHub contribution snake animation">
-  </picture>
-</p>
+![FastAPI](https://img.shields.io/badge/FastAPI-0D0F10?style=flat-square&logo=fastapi&logoColor=B6F09C)
+![LangGraph](https://img.shields.io/badge/LangGraph-0D0F10?style=flat-square&logo=langchain&logoColor=B6F09C)
+![REST APIs](https://img.shields.io/badge/REST_APIs-0D0F10?style=flat-square&logo=fastapi&logoColor=B6F09C)
 
-<img src="assets/connect.svg" width="100%" alt="Connect">
+**Frontend & desktop**
 
-<p align="center">
-  <a href="https://github.com/Abhijat-Abhijat">
-    <img src="https://img.shields.io/badge/EXPLORE_MY_GITHUB-292725?style=for-the-badge&logo=github&logoColor=F5F1E8" alt="Explore my GitHub">
-  </a>
-</p>
+![React](https://img.shields.io/badge/React-0D0F10?style=flat-square&logo=react&logoColor=B6F09C)
+![React Native](https://img.shields.io/badge/React_Native-0D0F10?style=flat-square&logo=react&logoColor=B6F09C)
+![Electron](https://img.shields.io/badge/Electron-0D0F10?style=flat-square&logo=electron&logoColor=B6F09C)
 
-<p align="center">
-  <sub>Thoughtful engineering. Intelligent systems. Continuous iteration.</sub>
-</p>
+**Cloud, delivery & data**
+
+![Azure](https://img.shields.io/badge/Azure-0D0F10?style=flat-square&logo=microsoftazure&logoColor=B6F09C)
+![Docker](https://img.shields.io/badge/Docker-0D0F10?style=flat-square&logo=docker&logoColor=B6F09C)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0D0F10?style=flat-square&logo=githubactions&logoColor=B6F09C)
+![GitLab CI/CD](https://img.shields.io/badge/GitLab_CI%2FCD-0D0F10?style=flat-square&logo=gitlab&logoColor=B6F09C)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0D0F10?style=flat-square&logo=postgresql&logoColor=B6F09C)
+![MySQL](https://img.shields.io/badge/MySQL-0D0F10?style=flat-square&logo=mysql&logoColor=B6F09C)
+![MongoDB](https://img.shields.io/badge/MongoDB-0D0F10?style=flat-square&logo=mongodb&logoColor=B6F09C)
+![Splunk](https://img.shields.io/badge/Splunk-0D0F10?style=flat-square&logo=splunk&logoColor=B6F09C)
+
+## `experience.log`
+
+**Tata Consultancy Services — Software Engineer** · *Pune, India*  
+*June 2024 – Present · UBS client engagement*
+
+- Developed multi-agent AI workflows and Python utilities for internal productivity.
+- Contributed to an identification agent reported as adopted by 13+ teams.
+- Improved delivery workflows with CI/CD changes associated with 40% faster deployments.
+- Built Splunk dashboards supporting monitoring and work associated with a reported 15% reduction in downtime.
+
+**TCI — Software Engineering** · *Delhi, India*  
+*November 2022 – November 2023 · client work included HerHeadquarters and Mud Australia*
+
+- Contributed to stability improvements for a product serving 10,000+ monthly users.
+- Helped resolve 50+ production issues and improve build time by a reported 30%.
+
+## `recognition/`
+
+- 🥈 Silver Medal — B.Tech academic year 2022–23, SRM University Delhi NCR (SGPA 9.1)
+- ⭐ Star of the Month — TCS
+- 🏅 On The Spot Award — TCS
+- 🎓 DIAT Certified — DRDO Pune
+
+## `github --status`
+
+<div align="center">
+
+<a href="https://github.com/Abhijat-Abhijat">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Abhijat-Abhijat&show_icons=true&hide_border=true&bg_color=0D0F10&title_color=B6F09C&text_color=F2F0E9&icon_color=B6F09C&ring_color=B6F09C" alt="GitHub stats" />
+</a>
+<a href="https://github.com/Abhijat-Abhijat">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhijat-Abhijat&layout=compact&hide_border=true&bg_color=0D0F10&title_color=B6F09C&text_color=F2F0E9" alt="Top languages" />
+</a>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Abhijat-Abhijat&bg_color=0D0F10&color=F2F0E9&line=B6F09C&point=B6F09C&area=true&hide_border=true" width="100%" alt="Contribution activity graph" />
+
+</div>
+
+## `contributions --animate`
+
+<div align="center">
+
+![Contribution snake](https://raw.githubusercontent.com/Abhijat-Abhijat/Abhijat-Abhijat/output/github-snake.svg)
+
+</div>
+
+## `exit 0` — let's connect
+
+If you're working on **AI agents, backend engineering, automation, or tools that make developers more effective**, I'd be happy to connect.
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-0D0F10?style=for-the-badge&logo=firefoxbrowser&logoColor=B6F09C)](https://www.abhijat.co.in/)
+[![GitHub](https://img.shields.io/badge/GitHub-0D0F10?style=for-the-badge&logo=github&logoColor=B6F09C)](https://github.com/Abhijat-Abhijat)
+
+<sub>Built with curiosity, caffeine, and a suspicious number of terminal tabs.</sub>
+
+</div>

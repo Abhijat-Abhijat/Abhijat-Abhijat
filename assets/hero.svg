@@ -1,33 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg"
- width="1200" height="360" viewBox="0 0 1200 360">
- <rect width="1200" height="360" rx="18" fill="#292725"/>
- <path d="M0 290 Q260 210 500 300 T1200 285"
- fill="none" stroke="#9A795B" opacity=".55"/>
- <path d="M0 320 Q280 240 560 325 T1200 310"
- fill="none" stroke="#9A795B" opacity=".3"/>
- <rect x="64" y="54" width="52" height="4" fill="#B49A7A"/>
- <text x="64" y="95" font-family="Arial,sans-serif"
- font-size="16" letter-spacing="4" fill="#D5C7B2">
- ENGINEERING · INTELLIGENCE · SYSTEMS</text>
- <text x="60" y="180" font-family="Georgia,serif"
- font-size="76" fill="#F5F1E8">Abhijat.</text>
- <text x="64" y="225" font-family="Arial,sans-serif"
- font-size="23" fill="#E4DED2">
- Full-Stack Software Engineer</text>
- <text x="64" y="261" font-family="Arial,sans-serif"
- font-size="18" fill="#BFB6A8">
- AI / Agent Systems · Cloud-Native Applications</text>
- <text x="64" y="324" font-family="Arial,sans-serif"
- font-size="13" letter-spacing="2" fill="#B49A7A">
- BUILDING INTELLIGENT SYSTEMS THAT SHIP</text>
- <circle cx="1020" cy="150" r="82" fill="none"
- stroke="#B49A7A" stroke-width="1.5" opacity=".7"/>
- <circle cx="1020" cy="150" r="57" fill="none"
- stroke="#B49A7A" opacity=".55"/>
- <circle cx="1020" cy="150" r="30" fill="#B49A7A" opacity=".12"/>
- <path d="M938 150 H990 M1050 150 H1102 M1020 68 V120
- M1020 180 V232 M962 92 L1000 130 M1040 170 L1078 208
- M1078 92 L1040 130 M1000 170 L962 208"
- fill="none" stroke="#B49A7A" stroke-width="1.5"/>
- <circle cx="1020" cy="150" r="5" fill="#F5F1E8"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Abhijat — AI, software and systems</title>
+  <desc id="desc">Minimal terminal-inspired profile banner in near-black, warm white and terminal green.</desc>
+  <defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#343638" stroke-width="1" opacity=".48"/></pattern><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0D0F10"/><stop offset="1" stop-color="#151918"/></linearGradient></defs>
+  <rect width="1200" height="340" rx="22" fill="url(#fade)"/><rect width="1200" height="340" rx="22" fill="url(#grid)"/>
+  <circle cx="38" cy="34" r="5" fill="#B6F09C"/><circle cx="57" cy="34" r="5" fill="#A6A49B"/><circle cx="76" cy="34" r="5" fill="#343638"/>
+  <text x="62" y="103" font-family="monospace" font-size="17" fill="#A6A49B">~/profile $ whoami</text>
+  <text x="58" y="174" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" letter-spacing="-2" fill="#F2F0E9">ABHIJAT<tspan fill="#B6F09C">.</tspan></text>
+  <text x="62" y="218" font-family="monospace" font-size="19" fill="#F2F0E9">AI ENGINEERING  /  FULL-STACK  /  SYSTEMS</text>
+  <text x="62" y="267" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#A6A49B">Building intelligent workflows and software that ships.</text>
+  <rect x="62" y="294" width="10" height="10" rx="2" fill="#B6F09C"/><text x="84" y="304" font-family="monospace" font-size="13" fill="#B6F09C">AVAILABLE FOR INTERESTING PROBLEMS</text>
+  <g transform="translate(930 115)" opacity=".96"><rect width="205" height="132" rx="12" fill="#0D0F10" stroke="#343638"/><text x="18" y="29" font-family="monospace" font-size="12" fill="#A6A49B">agent.status</text><circle cx="179" cy="24" r="5" fill="#B6F09C"/><path d="M20 52H183M20 72H143M20 92H164" stroke="#343638" stroke-width="7" stroke-linecap="round"/><path d="M20 52H110M20 72H86M20 92H126" stroke="#B6F09C" stroke-width="3" stroke-linecap="round"/></g>
 </svg>
