@@ -1,40 +1,313 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d0f10">
-<title>SNAKE.exe — Abhijat's Arcade</title>
-<style>
-:root{--bg:#0d0f10;--panel:#141817;--line:#2c332f;--fg:#f2f0e9;--muted:#9a9e95;--green:#b6f09c;--green2:#7cce69;--red:#ff786e;--gold:#f2cb79}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#253326 0,transparent 48%),var(--bg);color:var(--fg);font:15px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;min-height:100vh;display:flex;justify-content:center;padding:28px 14px 40px}.wrap{width:min(780px,100%)}a{color:var(--green)}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}.brand{font-size:12px;color:var(--muted);letter-spacing:.16em}.pill{border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:var(--green);font-size:11px}.hero{margin:12px 0 20px}.eyebrow{color:var(--green);font-size:11px;letter-spacing:.2em;text-transform:uppercase}.hero h1{font-size:clamp(32px,7vw,58px);letter-spacing:-.07em;line-height:1;margin:12px 0}.hero h1 span{color:var(--green)}.hero p{color:var(--muted);margin:0;max-width:560px}.game-shell{background:linear-gradient(145deg,#171c19,#101312);border:1px solid #343c35;border-radius:18px;padding:14px;box-shadow:0 22px 70px #0008}.hud{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.stat{background:#0c0f0e;border:1px solid var(--line);border-radius:10px;padding:10px 12px}.stat label{display:block;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase}.stat strong{font-size:22px;color:var(--green);font-weight:700}.canvas-wrap{position:relative;background:#080b09;border:1px solid #2a322b;border-radius:12px;overflow:hidden;line-height:0}canvas{width:100%;height:auto;display:block;image-rendering:pixelated}.overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;background:#080b09d9;padding:22px}.overlay.hidden{display:none}.overlay-card{max-width:320px}.overlay h2{font-size:25px;line-height:1.1;margin:0 0 9px;letter-spacing:-.04em}.overlay p{color:var(--muted);font-size:12px;margin:0 0 18px}.btn{border:1px solid var(--green);background:var(--green);color:#11150f;border-radius:9px;padding:11px 16px;font:700 12px inherit;cursor:pointer;font-family:inherit;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-1px);background:#c9ffad}.btn.secondary{background:transparent;color:var(--fg);border-color:var(--line)}.controls{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:13px;flex-wrap:wrap}.hint{color:var(--muted);font-size:11px}.actions{display:flex;gap:8px}.touch{display:grid;grid-template-columns:repeat(3,44px);grid-template-rows:repeat(2,38px);gap:5px;margin:14px auto 0;width:max-content}.touch button{border:1px solid var(--line);background:#1a201c;color:var(--green);border-radius:8px;font-size:16px;touch-action:manipulation}.touch button:active{background:var(--green);color:#101410}.up{grid-column:2}.left{grid-column:1;grid-row:2}.down{grid-column:2;grid-row:2}.right{grid-column:3;grid-row:2}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#666f66;font-size:10px;margin:16px 2px}.foot b{color:var(--green);font-weight:500}@media(min-width:620px){.touch{display:none}.game-shell{padding:18px}.top{margin-bottom:28px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
-</style></head><body><main class="wrap">
-<div class="top"><div class="brand">ABHIJAT / PERSONAL ARCADE</div><div class="pill">● ARCADE MODE</div></div>
-<header class="hero"><div class="eyebrow">// one more run?</div><h1>SNAKE<span>.exe</span></h1><p>Eat. Grow. Don't crash. A tiny neon arcade game—built for the browser, powered by questionable snack decisions.</p></header>
-<section class="game-shell" aria-label="Snake game">
-<div class="hud"><div class="stat"><label>Score</label><strong id="score">000</strong></div><div class="stat"><label>Best run</label><strong id="best">000</strong></div><div class="stat"><label>Speed</label><strong id="speed">01</strong></div></div>
-<div class="canvas-wrap"><canvas id="board" width="600" height="600" aria-label="Snake game board"></canvas><div class="overlay" id="overlay"><div class="overlay-card"><div class="eyebrow" id="overline">READY PLAYER ONE</div><h2 id="title">Boot up the snake.</h2><p id="message">Collect the glowing data bits. Don't bite your own tail. That's a bug, not a feature.</p><button class="btn" id="start">▶ START GAME</button></div></div></div>
-<div class="controls"><div class="hint">MOVE <b>↑ ↓ ← →</b> or <b>W A S D</b> · PAUSE <b>SPACE</b></div><div class="actions"><button class="btn secondary" id="pause">Ⅱ PAUSE</button><button class="btn secondary" id="restart">↻ RESET</button></div></div>
-<div class="touch" aria-label="Touch controls"><button class="up" data-dir="up">▲</button><button class="left" data-dir="left">◀</button><button class="down" data-dir="down">▼</button><button class="right" data-dir="right">▶</button></div>
-</section>
-<div class="foot"><span>BUILD: <b>0.1.0</b> / NO FRAMEWORKS REQUIRED</span><span><a href="https://github.com/Abhijat-Abhijat">← BACK TO PROFILE</a></span></div>
-</main><script>
-(()=>{'use strict';const canvas=document.querySelector('#board'),ctx=canvas.getContext('2d'),N=24,C=25;let snake,food,dir,nextDir,score,best=0,tick=null,started=false,paused=false,over=false,speed=1;const $=s=>document.querySelector(s);try{best=Number(localStorage.getItem('abhijat-snake-best'))||0}catch{}$('#best').textContent=String(best).padStart(3,'0');
-function reset(){clearInterval(tick);snake=[{x:8,y:12},{x:7,y:12},{x:6,y:12},{x:5,y:12}];dir={x:1,y:0};nextDir={...dir};score=0;speed=1;started=false;paused=false;over=false;foodAtRandom();hud();draw();overlay('READY PLAYER ONE','Boot up the snake.','Collect the glowing data bits. Don\'t bite your own tail. That\'s a bug, not a feature.','▶ START GAME');$('#pause').textContent='Ⅱ PAUSE'}
-function foodAtRandom(){do{food={x:Math.floor(Math.random()*N),y:Math.floor(Math.random()*N)}}while(snake?.some(p=>p.x===food.x&&p.y===food.y))}
-function hud(){$('#score').textContent=String(score).padStart(3,'0');$('#best').textContent=String(best).padStart(3,'0');$('#speed').textContent=String(speed).padStart(2,'0')}
-function overlay(kicker,title,msg,button){$('#overline').textContent=kicker;$('#title').textContent=title;$('#message').textContent=msg;$('#start').textContent=button;$('#overlay').classList.remove('hidden')}
-function hide(){ $('#overlay').classList.add('hidden') }
-function begin(){if(over)reset();if(!started){started=true;paused=false;hide();runLoop()}else if(paused){paused=false;hide();runLoop()}}
-function runLoop(){clearInterval(tick);tick=setInterval(step,Math.max(62,145-(speed-1)*8))}
-function step(){if(!started||paused||over)return;dir=nextDir;const head={x:snake[0].x+dir.x,y:snake[0].y+dir.y};if(head.x<0||head.y<0||head.x>=N||head.y>=N||snake.some((p,i)=>i<snake.length-1&&p.x===head.x&&p.y===head.y)){gameOver();return}snake.unshift(head);if(head.x===food.x&&head.y===food.y){score+=10;if(score>best){best=score;try{localStorage.setItem('abhijat-snake-best',best)}catch{}}speed=Math.min(9,1+Math.floor(score/50));foodAtRandom();hud();if(score>0&&score%100===0){$('#overline').textContent='LEVEL UP';}}else snake.pop();draw()}
-function gameOver(){over=true;started=false;clearInterval(tick);overlay('RUN TERMINATED','You crashed.','Final score: '+score+'. The leaderboard remembers. Run it back?','↻ PLAY AGAIN');$('#pause').textContent='Ⅱ PAUSE'}
-function draw(){const w=canvas.width/N;ctx.fillStyle='#080b09';ctx.fillRect(0,0,600,600);ctx.strokeStyle='rgba(182,240,156,.055)';ctx.lineWidth=1;for(let i=0;i<=N;i++){ctx.beginPath();ctx.moveTo(i*w,0);ctx.lineTo(i*w,600);ctx.stroke();ctx.beginPath();ctx.moveTo(0,i*w);ctx.lineTo(600,i*w);ctx.stroke()}
-// food glow
-const fx=(food.x+.5)*w,fy=(food.y+.5)*w;ctx.save();ctx.shadowColor='#b6f09c';ctx.shadowBlur=22;ctx.fillStyle='#b6f09c';ctx.beginPath();ctx.arc(fx,fy,w*.27,0,Math.PI*2);ctx.fill();ctx.restore();ctx.fillStyle='#efffe6';ctx.beginPath();ctx.arc(fx,fy,w*.09,0,Math.PI*2);ctx.fill();
-snake.forEach((p,i)=>{const pad=i===0?2:3,x=p.x*w+pad,y=p.y*w+pad,s=w-pad*2;ctx.fillStyle=i===0?'#d4ffbd':`rgba(139,220,116,${Math.max(.35,1-i/(snake.length*1.4))})`;roundRect(ctx,x,y,s,s, i===0?7:5);if(i===0){ctx.fillStyle='#101710';let ex=x+s*.65,ey=y+s*.34; if(dir.x===-1)ex=x+s*.25;if(dir.y===1)ey=y+s*.65;if(dir.y===-1)ey=y+s*.25;ctx.beginPath();ctx.arc(ex,ey,2.3,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(x+s*.38,y+s*.38,2.3,0,Math.PI*2);ctx.fill()}})}
-function roundRect(c,x,y,w,h,r){c.beginPath();c.roundRect(x,y,w,h,r);c.fill()}
-function setDir(name){const map={up:{x:0,y:-1},down:{x:0,y:1},left:{x:-1,y:0},right:{x:1,y:0}};const d=map[name];if(!d||d.x===-dir.x&&d.y===-dir.y)return;nextDir=d;if(!started&&!over)begin()}
-document.addEventListener('keydown',e=>{const k=e.key.toLowerCase(),keys={arrowup:'up',w:'up',arrowdown:'down',s:'down',arrowleft:'left',a:'left',arrowright:'right',d:'right'};if(keys[k]){e.preventDefault();setDir(keys[k])}if(k===' '){e.preventDefault();togglePause()}});document.querySelectorAll('[data-dir]').forEach(b=>b.addEventListener('click',()=>setDir(b.dataset.dir)));$('#start').addEventListener('click',begin);$('#restart').addEventListener('click',reset);$('#pause').addEventListener('click',togglePause);
-function togglePause(){if(!started||over){if(!started&&!over)begin();return}paused=!paused;if(paused){clearInterval(tick);overlay('PAUSED','Take a breather.','Your snake is holding position. Resume when ready.','▶ RESUME')}else{hide();runLoop()}$('#pause').textContent=paused?'▶ RESUME':'Ⅱ PAUSE'}
-// swipe controls for mobile
-let touchStart=null;canvas.addEventListener('touchstart',e=>{const t=e.changedTouches[0];touchStart={x:t.clientX,y:t.clientY}},{passive:true});canvas.addEventListener('touchend',e=>{if(!touchStart)return;const t=e.changedTouches[0],dx=t.clientX-touchStart.x,dy=t.clientY-touchStart.y;if(Math.max(Math.abs(dx),Math.abs(dy))>22)setDir(Math.abs(dx)>Math.abs(dy)?(dx>0?'right':'left'):(dy>0?'down':'up'));touchStart=null},{passive:true});reset();
-})();
-</script></body></html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#0D0F10">
+    <meta name="description" content="A tiny terminal-themed debugging quiz by Abhijat.">
+    <title>Terminal Quest — Abhijat</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0D0F10;
+            --panel: #151918;
+            --fg: #F2F0E9;
+            --muted: #A6A49B;
+            --green: #B6F09C;
+            --border: #343638;
+            --bad: #ff9b91
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: radial-gradient(ellipse at 50% -15%, #263326 0, transparent 45%), var(--bg);
+            color: var(--fg);
+            font: 16px/1.55 ui-monospace, SFMono-Regular, Consolas, monospace;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px
+        }
+
+        .shell {
+            width: min(760px, 100%);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            overflow: hidden;
+            background: #101312;
+            box-shadow: 0 24px 80px #0008
+        }
+
+        .top {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 12px
+        }
+
+        .dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--green)
+        }
+
+        .top span:last-child {
+            margin-left: auto
+        }
+
+        .content {
+            padding: clamp(22px, 5vw, 42px)
+        }
+
+        .eyebrow {
+            color: var(--green);
+            font-size: 12px;
+            letter-spacing: .14em;
+            text-transform: uppercase
+        }
+
+        .title {
+            font: 700 clamp(32px, 7vw, 54px)/1.05 system-ui, sans-serif;
+            letter-spacing: -.04em;
+            margin: 12px 0
+        }
+
+        .title em {
+            color: var(--green);
+            font-style: normal
+        }
+
+        .intro {
+            color: var(--muted);
+            max-width: 55ch
+        }
+
+        .stats {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 22px 0
+        }
+
+        .pill {
+            border: 1px solid var(--border);
+            padding: 7px 11px;
+            border-radius: 999px;
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .pill b {
+            color: var(--green)
+        }
+
+        .question {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 22px;
+            background: var(--panel);
+            margin-top: 24px
+        }
+
+        .qmeta {
+            display: flex;
+            justify-content: space-between;
+            color: var(--muted);
+            font-size: 12px;
+            margin-bottom: 12px
+        }
+
+        .prompt {
+            color: var(--fg);
+            font-size: 16px;
+            margin: 0 0 16px
+        }
+
+        .code {
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            background: #090b0a;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            color: var(--green);
+            font-size: 14px;
+            margin: 0 0 18px
+        }
+
+        .answers {
+            display: grid;
+            gap: 10px
+        }
+
+        .answer,
+        button {
+            font: inherit;
+            cursor: pointer;
+            border-radius: 9px;
+            border: 1px solid var(--border);
+            padding: 12px 14px;
+            text-align: left;
+            background: #101312;
+            color: var(--fg);
+            transition: border-color .15s, transform .15s
+        }
+
+        .answer:hover:not(:disabled),
+        button:hover {
+            border-color: var(--green);
+            transform: translateY(-1px)
+        }
+
+        .answer:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--green);
+            outline-offset: 3px
+        }
+
+        .answer:disabled {
+            cursor: default;
+            opacity: .95
+        }
+
+        .answer.correct {
+            border-color: var(--green);
+            color: var(--green)
+        }
+
+        .answer.wrong {
+            border-color: var(--bad);
+            color: var(--bad)
+        }
+
+        .feedback {
+            min-height: 48px;
+            color: var(--muted);
+            margin: 14px 0 0
+        }
+
+        .feedback.good {
+            color: var(--green)
+        }
+
+        .feedback.bad {
+            color: var(--bad)
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px
+        }
+
+        .primary {
+            background: var(--green);
+            color: #0D0F10;
+            border-color: var(--green);
+            font-weight: 700;
+            text-align: center
+        }
+
+        .secondary {
+            text-align: center
+        }
+
+        .footer {
+            padding: 16px 22px;
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .footer a {
+            color: var(--green);
+            text-decoration: none
+        }
+
+        .hidden {
+            display: none !important
+        }
+
+        .end {
+            text-align: center;
+            padding: 20px 0
+        }
+
+        .end h2 {
+            font: 700 32px system-ui, sans-serif
+        }
+
+        .end strong {
+            color: var(--green)
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            * {
+                transition: none !important
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="shell">
+        <header class="top"><i class="dot"></i><span>abhijat@terminal</span><span>TERMINAL QUEST v1.0</span></header>
+        <div class="content">
+            <div class="eyebrow">// tiny debugging challenge</div>
+            <h1 class="title">Terminal <em>Quest</em></h1>
+            <p class="intro">Five quick questions. Spot the bug, choose the fix, and see if you can earn the <strong
+                    style="color:var(--green)">ship-it</strong> badge. No installs. Just brain power.</p>
+            <div class="stats"><span class="pill">ROUND <b id="round">1</b>/5</span><span class="pill">SCORE <b
+                        id="score">0</b></span><span class="pill">STREAK <b id="streak">0</b></span></div>
+            <section id="play" class="question" aria-live="polite">
+                <div class="qmeta"><span id="topic">PYTHON</span><span id="progress">01 / 05</span></div>
+                <p class="prompt" id="prompt"></p>
+                <pre class="code" id="snippet"></pre>
+                <div class="answers" id="answers"></div>
+                <p class="feedback" id="feedback" role="status"></p>
+                <div class="actions"><button id="next" class="primary hidden">Next challenge →</button><button id="skip"
+                        class="secondary">Skip this one</button></div>
+            </section>
+            <section id="result" class="end hidden">
+                <div class="eyebrow">// session complete</div>
+                <h2 id="resultTitle">Quest complete.</h2>
+                <p id="resultText"></p>
+                <div class="actions" style="justify-content:center"><button class="primary" id="restart">Play again
+                        ↻</button><button class="secondary" id="share">Copy score</button></div>
+                <p class="feedback" id="shareStatus"></p>
+            </section>
+        </div>
+        <footer class="footer"><span>Built with HTML · CSS · JavaScript</span><span><a
+                    href="https://www.abhijat.co.in/">Portfolio</a> · <a
+                    href="https://github.com/Abhijat-Abhijat">GitHub</a></span></footer>
+    </main>
+    <script>
+        const bank = [
+            { topic: 'PYTHON', prompt: 'Which line safely reads a missing dictionary key?', code: "user = {\"name\": \"Ada\"}\n# We need age, but it may not exist", answers: ['age = user["age"]', 'age = user.get("age", 0)', 'age = user.age'], correct: 1, why: 'dict.get(key, default) avoids a KeyError and gives a fallback when the key is absent.' },
+            { topic: 'JAVASCRIPT', prompt: 'What is the reliable way to compare values and types?', code: 'if (count == 0) {\n  start();\n}', answers: ['if (count = 0) { start(); }', 'if (count === 0) { start(); }', 'if (count equals 0) { start(); }'], correct: 1, why: '=== checks strict equality without implicit type coercion. A single = assigns a value.' },
+            { topic: 'HTTP / API', prompt: 'Your endpoint creates a new resource. Which status is the best fit?', code: 'POST /api/tasks\n→ task created successfully', answers: ['200 OK is the only valid choice', '201 Created', '404 Not Found'], correct: 1, why: '201 Created communicates that the request created a resource. A 200 can be valid in some APIs, but 201 is the clearest fit here.' },
+            { topic: 'GIT', prompt: 'You want to inspect local changes before committing. What do you run?', code: '$ git ______', answers: ['git status', 'git push --force', 'git reset --hard'], correct: 0, why: 'git status summarizes staged and unstaged changes without modifying your work.' },
+            { topic: 'DEBUGGING', prompt: 'A loop should visit each item once. What fixes this off-by-one bug?', code: 'items = ["a", "b", "c"]\nfor i in range(len(items) + 1):\n    print(items[i])', answers: ['Use range(len(items))', 'Use range(len(items) - 1)', 'Keep it: index 3 exists'], correct: 0, why: 'Valid indices run from 0 through len(items) - 1. The +1 attempts to access one index past the end.' },
+            { topic: 'PYTHON', prompt: 'Which is the best way to open a file so it closes reliably?', code: '', answers: ['f = open("notes.txt")', 'with open("notes.txt") as f:', 'open("notes.txt").never_close()'], correct: 1, why: 'A with statement uses a context manager to close the file even if an error occurs.' },
+            { topic: 'SECURITY', prompt: 'Where should an API secret live in a deployed app?', code: '', answers: ['Hard-coded in the repository', 'A public README badge', 'A secret manager or protected environment variable'], correct: 2, why: 'Keep secrets out of source control and use a secret manager or protected environment configuration.' },
+            { topic: 'SQL', prompt: 'Which query safely filters for a supplied email?', code: '', answers: ['Build SQL by concatenating raw input', 'Use a parameterized query', 'Put the email in the SQL comment'], correct: 1, why: 'Parameterized queries keep data separate from SQL syntax and help prevent injection.' }
+        ];
+        let questions = [], index = 0, score = 0, streak = 0, locked = false; const $ = id => document.getElementById(id); function shuffle(a) { return [...a].sort(() => Math.random() - .5) } function start() { questions = shuffle(bank).slice(0, 5); index = score = streak = 0; locked = false; $('play').classList.remove('hidden'); $('result').classList.add('hidden'); render() } function render() { locked = false; const q = questions[index]; $('round').textContent = index + 1; $('score').textContent = score; $('streak').textContent = streak; $('topic').textContent = q.topic; $('progress').textContent = String(index + 1).padStart(2, '0') + ' / 05'; $('prompt').textContent = q.prompt; $('snippet').textContent = q.code || '// Think through the scenario, then choose the best practice.'; $('answers').replaceChildren(); q.answers.forEach((a, i) => { const b = document.createElement('button'); b.className = 'answer'; b.textContent = String.fromCharCode(65 + i) + '.  ' + a; b.addEventListener('click', () => choose(i)); $('answers').append(b) }); $('feedback').textContent = 'Choose an answer to reveal the explanation.'; $('feedback').className = 'feedback'; $('next').classList.add('hidden'); $('next').textContent = index === 4 ? 'See results →' : 'Next challenge →'; $('skip').disabled = false } function choose(i) { if (locked) return; locked = true; const q = questions[index], buttons = [...$('answers').children]; buttons.forEach((b, j) => { b.disabled = true; if (j === q.correct) b.classList.add('correct'); if (j === i && i !== q.correct) b.classList.add('wrong') }); if (i === q.correct) { score += 10 + Math.min(streak, 4) * 2; streak++; $('feedback').textContent = '✓ Correct. ' + q.why; $('feedback').className = 'feedback good' } else { streak = 0; $('feedback').textContent = 'Not quite. ' + q.why; $('feedback').className = 'feedback bad' } $('score').textContent = score; $('streak').textContent = streak; $('next').classList.remove('hidden'); $('skip').disabled = true } function advance() { if (index < 4) { index++; render() } else finish() } function finish() { $('play').classList.add('hidden'); $('result').classList.remove('hidden'); $('resultTitle').textContent = score >= 60 ? 'Ship it. 🚀' : score >= 30 ? 'Nice debugging.' : 'Keep iterating.'; $('resultText').innerHTML = 'You scored <strong>' + score + '</strong> points out of a possible 100-ish. ' + (score >= 60 ? 'You have earned the unofficial ship-it badge.' : 'Run it back and try to beat your score.'); $('shareStatus').textContent = '' } $('next').addEventListener('click', advance); $('skip').addEventListener('click', () => { if (locked) return; streak = 0; index < 4 ? (index++, render()) : finish() }); $('restart').addEventListener('click', start); $('share').addEventListener('click', async () => { const t = 'I scored ' + score + ' points in Terminal Quest by Abhijat!'; try { await navigator.clipboard.writeText(t); $('shareStatus').textContent = 'Score copied. Challenge a friend!' } catch (e) { $('shareStatus').textContent = t } }); start();
+    </script>
+</body>
+
+</html>
