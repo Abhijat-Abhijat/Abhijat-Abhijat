@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+ width="1200" height="360" viewBox="0 0 1200 360">
+ <rect width="1200" height="360" rx="18" fill="#292725"/>
+ <path d="M0 290 Q260 210 500 300 T1200 285"
+ fill="none" stroke="#9A795B" opacity=".55"/>
+ <path d="M0 320 Q280 240 560 325 T1200 310"
+ fill="none" stroke="#9A795B" opacity=".3"/>
+ <rect x="64" y="54" width="52" height="4" fill="#B49A7A"/>
+ <text x="64" y="95" font-family="Arial,sans-serif"
+ font-size="16" letter-spacing="4" fill="#D5C7B2">
+ ENGINEERING · INTELLIGENCE · SYSTEMS</text>
+ <text x="60" y="180" font-family="Georgia,serif"
+ font-size="76" fill="#F5F1E8">Abhijat.</text>
+ <text x="64" y="225" font-family="Arial,sans-serif"
+ font-size="23" fill="#E4DED2">
+ Full-Stack Software Engineer</text>
+ <text x="64" y="261" font-family="Arial,sans-serif"
+ font-size="18" fill="#BFB6A8">
+ AI / Agent Systems · Cloud-Native Applications</text>
+ <text x="64" y="324" font-family="Arial,sans-serif"
+ font-size="13" letter-spacing="2" fill="#B49A7A">
+ BUILDING INTELLIGENT SYSTEMS THAT SHIP</text>
+ <circle cx="1020" cy="150" r="82" fill="none"
+ stroke="#B49A7A" stroke-width="1.5" opacity=".7"/>
+ <circle cx="1020" cy="150" r="57" fill="none"
+ stroke="#B49A7A" opacity=".55"/>
+ <circle cx="1020" cy="150" r="30" fill="#B49A7A" opacity=".12"/>
+ <path d="M938 150 H990 M1050 150 H1102 M1020 68 V120
+ M1020 180 V232 M962 92 L1000 130 M1040 170 L1078 208
+ M1078 92 L1040 130 M1000 170 L962 208"
+ fill="none" stroke="#B49A7A" stroke-width="1.5"/>
+ <circle cx="1020" cy="150" r="5" fill="#F5F1E8"/>
+</svg>
