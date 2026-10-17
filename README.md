@@ -61,10 +61,10 @@ A lightweight Linux distribution experiment focused on learning how the operatin
 
 [Explore my repositories →](https://github.com/Abhijat-Abhijat?tab=repositories)
 
-### 🐍 SNAKE.exe — Neon Arcade
-A proper arcade classic: steer the neon snake, collect glowing data bits, rack up points, and beat your personal best. Keyboard, touch buttons, and swipe controls supported; speed ramps up as your score grows.
+### 🕹️ Terminal Quest — README mini-game
+A tiny browser game about debugging snippets and spotting the right fix. No frameworks, no dependencies—just HTML, CSS, and JavaScript.
 
-**[▶ PLAY SNAKE.exe](https://abhijat-abhijat.github.io/game/)** · [View game source](game/index.html)
+**[▶ Play Terminal Quest](https://abhijat-abhijat.github.io/game/)** · [View game source](game/index.html)
 
 > GitHub README Markdown doesn't execute embedded JavaScript. The game runs as a standalone page when GitHub Pages is enabled for this repository.
 
