@@ -1,31 +1,59 @@
-name: Generate contribution snake
+name: Contribution snake
+
+# Draws your public contribution graph as a snake animation in the portfolio palette
+# and publishes it to the `output` branch, where the README picks it up.
+# Run it once by hand (Actions tab, "Contribution snake", Run workflow); after that it refreshes every 12 hours.
 
 on:
   schedule:
-    - cron: "17 0 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
 
 permissions:
   contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generate contribution snake SVGs
+      # color_dots: exactly five colors. The first is an empty day, then low to high activity, ending on the accent.
+      # color_snake: the snake itself, in the foreground cream.
+      - name: Draw the snake
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: Abhijat-Abhijat
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?palette=github-light
-            dist/github-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish SVGs to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+            dist/github-snake.svg?color_snake=%23F2F0E9&color_dots=%231d2022,%232d4a35,%234f7d4c,%2386bd72,%23B6F09C
+
+      # The action's SVG has no background, so it would vanish on GitHub's light theme.
+      # Insert a card behind it, using the SVG's own viewBox (its origin is negative, so 100% would miss an edge).
+      - name: Put it on the dark card
+        run: |
+          python3 - <<'PY'
+          import re, pathlib
+          path = pathlib.Path("dist/github-snake.svg")
+          svg = path.read_text()
+          m = re.search(r'viewBox="(-?[\d.]+) (-?[\d.]+) ([\d.]+) ([\d.]+)"', svg)
+          if not m:
+              raise SystemExit("viewBox not found in the generated SVG")
+          x, y, w, h = (float(v) for v in m.groups())
+          card = (
+              f'<rect x="{x + 0.5}" y="{y + 0.5}" width="{w - 1}" height="{h - 1}" rx="12" '
+              f'fill="#0D0F10" stroke="#343638"/>'
+          )
+          svg, n = re.subn(r"(<svg[^>]*>)", lambda mo: mo.group(1) + card, svg, count=1)
+          if n != 1:
+              raise SystemExit("could not insert the background card")
+          path.write_text(svg)
+          PY
+
+      - name: Publish to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
