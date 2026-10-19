@@ -39,7 +39,7 @@
 <img src="assets/recognition.svg" width="100%" alt="Recognition: Silver Medal (Second rank in B.Tech CSE, SRM University Delhi-NCR, 2022–23); Star of the Month (Tata Consultancy Services, August 2025); On The Spot Award (Tata Consultancy Services, January 2026); DIAT certified (DRDO Pune). Writing and publications: The Basics of AI and IoT (A beginner’s book); ASH OS (Academic paper); Smart Industrial Robot (Registered design); 33 posts on the blog (Featured: “What I learned building AI verification pipelines” and “Building a tiny operating system to understand computers better”)">
 
 <img src="assets/title-commits.svg" width="100%" alt="07 Commits. A year of commits.">
-<img src="https://raw.githubusercontent.com/Abhijat-Abhijat/Abhijat-Abhijat/output/github-snake.svg" width="100%" alt="A snake eating my public GitHub contributions over the past year. Regenerated daily by GitHub Actions.">
+<img src="https://raw.githubusercontent.com/Abhijat-Abhijat/Abhijat-Abhijat/output/github-snake.svg?v=2" width="100%" alt="A snake eating my public GitHub contributions over the past year.">
 
 <img src="assets/title-connect.svg" width="100%" alt="08 Connect. Let's build something useful.">
 <p align="center">
